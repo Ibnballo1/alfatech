@@ -84,5 +84,5 @@ test:
 production:
   <<: *default
   database: alfatech_production
-  username: alfatech
-  password: <%= ENV["ALFATECH_DATABASE_PASSWORD"] %>
+  username: <%= ENV["DB_USER"] %>
+  password: "<%= ENV["DB_PWD"] %>"
